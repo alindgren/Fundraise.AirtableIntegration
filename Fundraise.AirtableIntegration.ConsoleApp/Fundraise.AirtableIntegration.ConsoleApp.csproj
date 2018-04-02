@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EasyNetQ" Version="2.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Fundraise.IntegrationEvents">
+      <HintPath>..\..\Fundraise\Fundraise.IntegrationEvents\bin\Debug\netstandard2.0\Fundraise.IntegrationEvents.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

@@ -4,4 +4,15 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="RestSharp" Version="106.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Fundraise.IntegrationEvents">
+      <HintPath>..\..\Fundraise\Fundraise.IntegrationEvents\bin\Debug\netstandard2.0\Fundraise.IntegrationEvents.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

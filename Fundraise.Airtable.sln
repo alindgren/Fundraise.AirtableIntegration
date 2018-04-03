@@ -3,9 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2015
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fundraise.Airtable", "Fundraise.Airtable\Fundraise.Airtable.csproj", "{B061F14F-C55C-40AD-9DB8-02E9F64B9542}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fundraise.Airtable", "Fundraise.Airtable\Fundraise.Airtable.csproj", "{B061F14F-C55C-40AD-9DB8-02E9F64B9542}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fundraise.AirtableIntegration.ConsoleApp", "Fundraise.AirtableIntegration.ConsoleApp\Fundraise.AirtableIntegration.ConsoleApp.csproj", "{46DEDF4A-AD79-4AE1-BBC6-0E0B3C7E261D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fundraise.AirtableIntegration.ConsoleApp", "Fundraise.AirtableIntegration.ConsoleApp\Fundraise.AirtableIntegration.ConsoleApp.csproj", "{46DEDF4A-AD79-4AE1-BBC6-0E0B3C7E261D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fundraise.Airtable.Tests", "Fundraise.Airtable.Tests\Fundraise.Airtable.Tests.csproj", "{54DFE210-5523-4D98-8915-F2082F199D9E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B061F14F-C55C-40AD-9DB8-02E9F64B9542} = {B061F14F-C55C-40AD-9DB8-02E9F64B9542}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +26,10 @@ Global
 		{46DEDF4A-AD79-4AE1-BBC6-0E0B3C7E261D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46DEDF4A-AD79-4AE1-BBC6-0E0B3C7E261D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46DEDF4A-AD79-4AE1-BBC6-0E0B3C7E261D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54DFE210-5523-4D98-8915-F2082F199D9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54DFE210-5523-4D98-8915-F2082F199D9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54DFE210-5523-4D98-8915-F2082F199D9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54DFE210-5523-4D98-8915-F2082F199D9E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

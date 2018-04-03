@@ -1,5 +1,6 @@
 ﻿using EasyNetQ;
 using EasyNetQ.Loggers;
+using Fundraise.Airtable;
 using Fundraise.IntegrationEvents;
 using System;
 
@@ -31,6 +32,10 @@ namespace Fundraise.AirtableIntegration.ConsoleApp
                 "DonorDisplayName: " + message.DonorDisplayName + "\n" +
                 "FundraiserId: " + message.FundraiserId + "\n\n"
             );
+
+            var client = new AirtableClient("appJdKhgVuGZUv0va", "keyql7soeJgu7cdsP");
+
+            var x = client.AddDonation(message);
         }
     }
 }
